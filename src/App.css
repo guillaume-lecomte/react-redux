@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,15 +13,81 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Table */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.styled-table td:last-child {
+  text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  color: #282c34;
+  background-color: whitesmoke;
+}
+
+.deleteButton {
+  font-size: 0.9em;
+  border: none;
+  background-color: whitesmoke;
+}
+
+/* Form */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.form-inline button {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-inline button:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transition: all 0.1s ease-in-out;
 }

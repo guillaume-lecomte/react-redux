@@ -1,2 +1,3 @@
 # Bookstore sample
-Sample project using ReactJs with Redux
+
+Sample Book Store App using ReactJs with Redux

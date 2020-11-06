@@ -1,9 +1,9 @@
-export const ADD_BOOK = 'ADD_BOOK';
-export function addBook(book) {
-  return { type: ADD_BOOK, book }
+export const ADD_BOOK = "ADD_BOOK";
+export function addBook(newBook) {
+  return { type: ADD_BOOK, payload: newBook };
 }
 
-export const GET_ALL_BOOKS = 'GET_ALL_BOOKS';
-export function getAllBooks() {
-  return { type: GET_ALL_BOOKS }
+export const REMOVE_BOOK = "REMOVE_BOOK";
+export function removeBook(id) {
+  return { type: REMOVE_BOOK, payload: { id } };
 }

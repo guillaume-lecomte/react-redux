@@ -1,16 +1,9 @@
-import { connect } from 'react-redux'
-import { addBook } from '../actions/bookActions'
-import BookList from '../components/BookList'
+import { connect } from "react-redux";
+import { addBook } from "../actions/bookActions";
+import AddBook from "../components/AddBook";
 
-const mapStateToProps = state => ({
-    books: state.books
-})
+const mapDispatchToProps = (dispatch) => ({
+  add: (bookItem) => dispatch(addBook(bookItem)),
+});
 
-const mapDispatchToProps = dispatch => ({
-    addBook: (bookItem) => dispatch(addBook(bookItem))
-})
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BookList)
+export default connect(null, mapDispatchToProps)(AddBook);
